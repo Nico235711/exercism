@@ -42,7 +42,7 @@ export function limesToCut(wedgesNeeded, limes) {
   let iterator = 0
   let limesCut = 0
   let totalLimesCut = 0
-  while (limesCut < wedgesNeeded) {
+  while (limesCut < wedgesNeeded && iterator < limes.length) {
     switch (limes[iterator]) {
       case 'small':
         limesCut += 6
